@@ -29,12 +29,12 @@ export default function Navbar() {
               book
             </Link>
             {/*Submenu */}
-            <div className="mx-6 inline-block cursor-pointer relative">
+            <div
+              className="mx-6 inline-block cursor-pointer relative"
+              onClick={() => handleClick("desktopSubMenu")}
+            >
               services
-              <FiChevronDown
-                className="inline cursor-pointer"
-                onClick={() => handleClick("desktopSubMenu")}
-              />
+              <FiChevronDown className="inline cursor-pointer" />
               <ul
                 className={
                   desktopSubMenuOpen
@@ -96,12 +96,12 @@ export default function Navbar() {
               book
             </Link>
             {/*Side menu - submenu*/}
-            <div className="cursor-pointer ml-4 mb-2">
+            <div
+              className="cursor-pointer ml-4 mb-2"
+              onClick={() => handleClick("mobileSubMenu")}
+            >
               services
-              <FiChevronDown
-                className="inline cursor-pointer"
-                onClick={() => handleClick("mobileSubMenu")}
-              />
+              <FiChevronDown className="inline cursor-pointer" />
               <ul className="hidden">
                 <Link href="/services/bodySculpting">Body Sculpting</Link>
                 <Link href="/services/lashExtensions">Lash extensions</Link>
