@@ -15,7 +15,7 @@ export default function Footer() {
         <Socials />
        
       </div>
-      <p className="m-2 mt-6 text-[10px]">&copy; zedvas 2024</p>
+      <p className="m-2 mt-6 text-[10px]"> zedvas &copy; 2024</p>
     </footer>
   );
 }
