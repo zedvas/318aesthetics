@@ -19,7 +19,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed bg-zinc-900 text-zinc-200 text-sm w-full h-16 flex justify-between">
+    <nav className="fixed top-0 bg-zinc-900 text-zinc-200 text-sm w-screen h-16 flex justify-between">
       <div className="w-full h-full p-3 flex justify-between sm:justify-center items-center">
         {/*Desktop menu */}
         <ul className="sm:flex justify-between items-center">
@@ -109,7 +109,7 @@ export default function Navbar() {
                   <Link href="/services/teethWhitening">teeth whitening</Link>
                 </ul>
               </div>
-              
+
             </div>
             <Link href="/" className="ml-4 mb-2">
               policies
