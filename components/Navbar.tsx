@@ -19,7 +19,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 bg-zinc-900 text-zinc-200 text-sm w-screen h-16 flex justify-between">
+    <nav className="sticky top-0 bg-zinc-900 text-zinc-200 text-sm w-screen h-16 flex justify-between z-10">
       <div className="w-full h-full p-3 flex justify-between sm:justify-center items-center">
         {/*Desktop menu */}
         <ul className="sm:flex justify-between items-center">
