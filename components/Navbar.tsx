@@ -8,15 +8,15 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [desktopSubMenuOpen, setDesktopSubMenuOpen] = useState(false);
   const [mobileSubMenuOpen, setMobileSubMenuOpen] = useState(false);
-  const handleClick = (menuType: string) => {
-    menuType === "mainMenu"
-      ? setMenuOpen(!menuOpen)
-      : menuType === "desktopSubMenu"
-      ? setDesktopSubMenuOpen(!desktopSubMenuOpen)
-      : menuType === "mobileSubMenu"
-      ? setMobileSubMenuOpen(!mobileSubMenuOpen)
-      : "";
-    return;
+
+  const handleClick = (menuType: string): void => {
+    if (menuType === "mainMenu") {
+      setMenuOpen(!menuOpen);
+    } else if (menuType === "desktopSubMenu") {
+      setDesktopSubMenuOpen(!desktopSubMenuOpen);
+    } else if (menuType === "mobileSubMenu") {
+      setMobileSubMenuOpen(!mobileSubMenuOpen);
+    }
   };
 
   return (
