@@ -16,6 +16,7 @@ export default function Navbar() {
       : menuType === "mobileSubMenu"
       ? setMobileSubMenuOpen(!mobileSubMenuOpen)
       : "";
+    return;
   };
 
   return (
@@ -102,14 +103,13 @@ export default function Navbar() {
             >
               services
               <FiChevronDown className="inline cursor-pointer" />
-              <div className={!mobileSubMenuOpen ? "hidden": ""}>
+              <div className={!mobileSubMenuOpen ? "hidden" : ""}>
                 <ul className="flex flex-col ml-2">
                   <Link href="/services/bodySculpting">body sculpting</Link>
                   <Link href="/services/lashExtensions">lash extensions</Link>
                   <Link href="/services/teethWhitening">teeth whitening</Link>
                 </ul>
               </div>
-
             </div>
             <Link href="/" className="ml-4 mb-2">
               policies

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
     <div className="relative w-screen h-[300px] flex justify-center items-center">
